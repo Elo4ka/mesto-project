@@ -1,0 +1,20 @@
+.profie__title {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 500;
+  margin: 62px 0 0 0;
+}
+
+@media screen and (max-width: 880px) {
+  .profie__title {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .profie__title {
+    margin: 0 calc(100%-227px)/2px;
+    font-size: 27px;
+    line-height: 32.68px;
+  }
+}

@@ -1,0 +1,8 @@
+.card__image  {
+    width: 100%;
+    min-width: 282px;
+    object-fit: fill;
+    border-radius: 15px;
+    grid-area: "image";
+    background-size: cover;
+}

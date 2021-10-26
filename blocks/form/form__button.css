@@ -1,0 +1,17 @@
+.form__button {
+  background-image: url(../../images/Like\ Icon\ Disabled.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-color: none;
+  width: 22px;
+  height: 19px;
+  grid-area: 'form__button';
+}
+
+.form__button:hover {
+  background-image: url(../../images/Like\ Icon\ Hover.svg);
+}
+
+.form__button:focus {
+  background-image: url(../../images/Like\ Icon\ Active.svg);
+}

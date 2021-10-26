@@ -1,0 +1,24 @@
+.logo {
+  height: 33px;
+  width: 142px;
+  background-image: url(../../images/logo\ white.svg);
+  background-repeat: no-repeat;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1279px) {
+  .logo {
+    padding-left: calc(100% - 880) / 2;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .logo {
+    height: 24.4px;
+    min-width: 103.74px;
+    margin-top: 28px;
+    /* padding-left: 27px; */
+    background-size: contain;
+    background-position: center;
+  }
+}

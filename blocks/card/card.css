@@ -1,0 +1,46 @@
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 282px;
+  grid-template-rows: 282px 79px;
+  grid-template-areas:
+    'image'
+    'card-title form__button';
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 282px;
+    grid-template-rows: 282px 79px;
+    grid-template-areas:
+      'image'
+      'card-title form__button';
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    background-color: #fff;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 282px;
+    grid-template-rows: 282px 79px;
+    grid-template-areas:
+      'image'
+      'card-title form__button';
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cards {
+    margin: 51px auto 67px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 17px 20px;
+  }
+}
