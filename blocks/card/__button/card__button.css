@@ -2,7 +2,7 @@
   background-image: url(../../../images/like_icon_disabled.svg);
   border: none;
   background-repeat: no-repeat;
-  background-color: rgba(0,  0, 0, .0);
+  background-color: rgba(0, 0, 0, 0);
   width: 22px;
   height: 19px;
   margin: 4px 0 0 0;
@@ -10,7 +10,7 @@
 }
 
 .card__button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .card__button:focus {

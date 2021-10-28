@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 950px) {
   .cards {
-    margin: 51px calc(100%-581px)/2 67px;
+    margin: 51px calc(100%-581px) / 2 67px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 615px) {
   .cards {
-    margin: 51px calc(100%-282px)/2 67px;
+    margin: 51px calc(100%-282px) / 2 67px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);

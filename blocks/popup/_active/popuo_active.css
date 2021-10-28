@@ -1,4 +1,4 @@
 .popup_active {
-    display: flex;
+    display: none;
     z-index: 20;
 }
