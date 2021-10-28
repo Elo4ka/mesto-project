@@ -6,7 +6,7 @@
   max-width: 190px;
   white-space: nowrap;
   width: 220px;
-  height: 110px;
+  min-height: 45px;
   overflow: hidden;
   text-overflow: ellipsis;
   grid-area: 'card-title';
