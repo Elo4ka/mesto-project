@@ -18,7 +18,7 @@
     grid-template-rows: 282px 79px;
     grid-template-areas:
       'image'
-      'card-title form__button';
+      'card-title card__button';
   }
 }
 
@@ -31,7 +31,7 @@
     grid-template-rows: 282px 79px;
     grid-template-areas:
       'image'
-      'card-title form__button';
+      'card-title card__button';
   }
 }
 

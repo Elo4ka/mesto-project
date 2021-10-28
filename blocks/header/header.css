@@ -1,9 +1,9 @@
 .header {
   margin: 0 auto;
   min-height: 119px;
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
   max-width: 880px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 @media screen and (max-width: 767px) {

@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Место</title>
-    <link rel="stylesheet" href="pages/index.css" />>
+    <link rel="stylesheet" href="pages/index.css" />
   </head>
-  <body class="page">
+  <body class="page page__overlay">
     <div class="page__container">
       <header class="header">
-        <div class="logo"></div>
+        <div><img class="logo" src="./images/logo_white.svg" alt="logo" /></div>
       </header>
 
       <section class="profile">
         <img
           class="profile__image"
-          src="./images/Жак-ИвКусто.jpg"
+          src="./images/жак-ив_кусто.jpg"
           alt="фото Жак-Ив Кусто"
         />
         <div class="profile__full">
           <div class="profile__data">
-            <h2 class="profie__title">Жак-Ив Кусто</h2>
-            <button class="profile__edit-button" onclick="openForm()"></button>
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button class="profile__edit-button" type="button"></button>
             <p class="profile__description">Исследователь океана</p>
           </div>
 
@@ -30,110 +30,67 @@
         </div>
       </section>
 
-      <div class="popup" id="editProfile">
-        <form action="/action_page.php" class="popup__container">
-          <button
-            class="popup__close-icon"
-            type="button"
-            onclick="closeForm()"
-          ></button>
-          <h2 class="popup__title">Редактировать профиль</h2>
-          <fieldset class="popup__field">
-            <label for="name"></label>
-            <input
-              type="text"
-              class="popup__item"
-              placeholder="Жак-Ив Кусто"
-              id="name"
-              name="name"
-            />
-            <label for="profession"></label>
-            <input
-              type="text"
-              class="popup__item"
-              placeholder="Исследователь океана"
-              id="profession"
-              name="profession"
-            />
-            <button
-              type="button"
-              class="popup__button"
-              onclick="closeForm()"
-            ></button>
-          </fieldset>
-        </form>
-      </div>
-
       <section class="cards">
         <article class="card">
           <img
             class="card__image"
-            src="./images/kirill-pershin-1088404-unsplash.jpg"
+            src="./images/карачаево-черкесия.jpg"
             alt="Карачаевск"
           />
           <div class="card__info">
             <p class="card-title">Карачаево-Черкесия</p>
-            <button class="form__button" type="button"></button>
+            <button class="card__button card__button_active" type="button"></button>
           </div>
         </article>
 
         <article class="card">
           <img
             class="card__image"
-            src="./images/kirill-pershin-1404681-unsplash.png"
+            src="./images/гора_эльбрус.png"
             alt="Гора Эльбрус"
           />
           <div class="card__info">
             <p class="card-title">Гора Эльбрус</p>
-            <button class="form__button" type="button"></button>
+            <button class="card__button card__button_active" type="button"></button>
           </div>
         </article>
 
         <article class="card">
-          <img
-            class="card__image"
-            src="./images/kirill-pershin-1556355-unsplash.jpg"
-            alt="Домбай"
-          />
+          <img class="card__image" src="./images/домбай.jpg" alt="Домбай" />
           <div class="card__info">
             <p class="card-title">Домбай</p>
-            <button class="form__button" type="button"></button>
+            <button
+              class="card__button card__button_active"
+              type="button"
+            ></button>
           </div>
         </article>
 
         <article class="card">
-          <img
-            class="card__image"
-            src="./images/kirill-pershin-1404681-unsplash.png"
-            alt="Гора Эльбрус"
-          />
+          <img class="card__image" src="./images/теберда.jpg" alt="Tеберда" />
           <div class="card__info">
-            <p class="card-title">Гора Эльбрус</p>
-            <button class="form__button" type="button"></button>
+            <p class="card-title">Теберда</p>
+            <button class="card__button card__button_active" type="button"></button>
           </div>
         </article>
 
         <article class="card">
-          <img
-            class="card__image"
-            src="./images/kirill-pershin-1556355-unsplash.jpg"
-            alt="Домбай"
-          />
+          <img class="card__image" src="./images/архыз.jpg" alt="Архыз" />
           <div class="card__info">
-            <p class="card-title">Домбай</p>
-            <button class="form__button" type="button"></button>
+            <p class="card-title">Архыз</p>
+            <button class="card__button card__button_active" type="button"></button>
           </div>
         </article>
 
         <article class="card">
           <img
             class="card__image"
-            src="./images/kirill-pershin-1088404-unsplash.jpg"
+            src="./images/карачаевск.jpg"
             alt="Карачаевск"
           />
           <div class="card__info">
             <p class="card-title">Карачаевск</p>
-            <button class="form__button" type="button"></button>
+            <button class="card__button card__button_active" type="button"></button>
           </div>
         </article>
       </section>
@@ -141,16 +98,35 @@
       <footer class="footer">
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
       </footer>
+
+      <div class="popup popup_active" id="editProfile">
+        <form
+          action="/action_page.php"
+          name="profile_editing"
+          class="popup__container"
+        >
+          <button class="popup__close-icon" type="button"></button>
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <fieldset class="popup__field">
+            <input
+              type="text"
+              class="popup__item"
+              placeholder="Жак-Ив Кусто"
+              id="name"
+              name="name"
+            />
+
+            <input
+              type="text"
+              class="popup__item"
+              placeholder="Исследователь океана"
+              id="profession"
+              name="profession"
+            />
+            <button type="submit" class="popup__button">Сохранить</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
-
-    <script>
-      function openForm() {
-        document.getElementById('editProfile').style.display = 'flex';
-      }
-
-      function closeForm() {
-        document.getElementById('editProfile').style.display = 'none';
-      }
-    </script>
   </body>
 </html>

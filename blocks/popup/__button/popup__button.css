@@ -1,21 +1,28 @@
 .popup__button {
   display: flex;
-  background-image: url(../../../images/Submit\ Button.svg);
-  background-color: none;
+  background-color: black;
   width: 358px;
-  height: 50px;
+  min-height: 50px;
   border: none;
+  font-size: 18px;
+  line-height: 22px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  border-radius: 2px;
+  color: #ffffff;
   margin: 48px auto 0;
 }
 
 .popup__button:hover {
-  background-image: url(../../../images/Submit\ Button\ Hover.svg);
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 767px) {
   .popup__button {
     width: 238px;
     height: 46px;
-    background-position: center;
+    font-size: 14px;
+    line-height: 17px;
   }
 }

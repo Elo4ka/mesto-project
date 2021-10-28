@@ -1,8 +1,6 @@
 .logo {
   height: 33px;
   width: 142px;
-  background-image: url(../../images/logo\ white.svg);
-  background-repeat: no-repeat;
   margin-top: 45px;
 }
 
@@ -12,10 +10,10 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 767px) {
   .logo {
-    height: 24.4px;
-    min-width: 103.74px;
+    height: 25px;
+    min-width: 104px;
     margin-top: 28px;
     /* padding-left: 27px; */
     background-size: contain;

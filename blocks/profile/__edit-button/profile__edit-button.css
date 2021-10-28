@@ -1,14 +1,16 @@
 .profile__edit-button {
   height: 24px;
   width: 24px;
-  background-image: url(../../../images/edit\ button.svg);
+  background-image: url(../../../images/edit_button.svg);
   background-color: #000;
-  border: none;
+  background-repeat: no-repeat;
+  border: 2px solid #ffffff;
+  background-position: center;
   margin: 77px 0 0 0;
 }
 
 .profile__edit-button:hover {
-  background-image: url(../../../images/edit\ button\ hover.svg);
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 880px) {
@@ -16,8 +18,9 @@
     margin: 0;
   }
 }
-/* @media screen and (max-width: 585px) {
+@media screen and (max-width: 585px) {
   .profile__edit-button {
-    margin: 0;
+    height: 18px;
+    width: 18px;
   }
-} */
+}
