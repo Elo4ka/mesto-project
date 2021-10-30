@@ -36,11 +36,11 @@
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 645px) {
   .cards {
-    margin: 51px calc(100%-282px) / 2 67px;
+    margin: 51px 19px 67px;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 282px);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 17px 20px;
   }

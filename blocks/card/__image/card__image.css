@@ -2,9 +2,9 @@
   width: 100%;
   min-width: 282px;
   min-height: 282px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 15px;
   grid-area: 'image';
-  background-size: cover;
+  background-size: scale-down;
   background-position: center;
 }

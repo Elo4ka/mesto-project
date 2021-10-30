@@ -16,11 +16,12 @@
   .profile__data {
     grid-template-columns: 203px 24px;
     margin: 0 calc((100%-327px) / 2) px;
+    grid-gap: 14px;
     align-items: center;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 645px) {
   .profile__data {
     grid-template-columns: 189px 10px;
     margin: 0 38px 0 46px;

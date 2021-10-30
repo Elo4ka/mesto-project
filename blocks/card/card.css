@@ -35,12 +35,8 @@
   }
 }
 
-@media screen and (max-width: 425px) {
-  .cards {
-    margin: 51px auto 67px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 17px 20px;
+@media screen and (max-width: 625px) {
+  .card {
+    align-items: center;
   }
 }
