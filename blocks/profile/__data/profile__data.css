@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 860px) {
   .profile__data {
     grid-template-columns: 203px 24px;
     margin: 0 calc((100%-327px) / 2) px;
